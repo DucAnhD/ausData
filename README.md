@@ -1,4 +1,4 @@
-# AUS DATA
+# ausData
 
 This is a simple python module to generate and validate Australian related data such as ABN, ACN and TFN.
 
