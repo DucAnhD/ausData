@@ -13,16 +13,20 @@ pip install ausdata
 ## Usage
 
 ```python
-from ausdata import acn,abn,tfn
+from ausData import acn,abn,tfn
 
 #Generate
 fakeAbn = abn.generate()
 fakeAcn = acn.generate()
 fakeTfn = tfn.generate()
 
-#Validate 
-abn.validate(fakeAbn)
-acn.validate(fakeAcn)
-tfn.validate(fakeTfn)
+print(fakeAbn, fakeAcn, fakeTfn) #return string data type
+
+#Validate - Accept both int or str
+abnCheck = abn.validate(fakeAbn)
+acnCheck = acn.validate(fakeAcn)
+tfnCheck = tfn.validate(fakeTfn)
+
+print(abnCheck, acnCheck, tfnCheck) #return boolean True/False
 ```
 
